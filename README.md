@@ -10,7 +10,7 @@ Este entregable aborda la extracción, transformación y carga (ETL) de datos co
    * **Clientes**: Asignación del valor `"Sin Dato"` en atributos opcionales (`email`, `ciudad`) para preservar las ventas históricas asociadas sin descartar registros.
    * **Productos**: Asignación de la categoría basada en la jerarquía del catálogo y del atributo `precio` para garantizar la continuidad en el cálculo de métricas financieras.
 3. **Estandarización y Modelado**:
-   * Conversión explícita de tipos de datos (`Date`, `Decimal Number`, `Whole Number`, `Text`).
+   * Conversión de tipos de datos (`Date`, `Decimal Number`, `Whole Number`, `Text`).
    * Enriquecimiento de la tabla de hechos (`Fact_Ventas`) mediante operaciones de `Merge` con la dimensión de productos para incorporar el nombre y la categoría del producto sin duplicar tablas.
 
 
